@@ -1,2 +1,70 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #669db6;
+}
+
+header {
+  border-top: 9px solid #669db6;
+}
+
+hr {
+  clear: both;
+}
+
+.logoReforest {
+  width: 90px;
+  height:100px;
+  position: relative;
+  margin: 20px 20px;
+}
+
+.logoReforest > div {
+  float: left;
+  width: 15%;
+  margin: 2.5%;
+  border-radius: 6px;
+  position: relative;
+}
+
+.stripe1 {
+  background: #EB645F;
+  height: 40%;
+  top: 30%;
+}
+
+.stripe2 {
+  background: #E99B5D;
+  height: 70%;
+  top: 15%;
+}
+
+.stripe3 {
+  background: #EEE37A;
+  height: 100%;
+}
+
+.stripe4 {
+  background: #7CCB20;
+  height: 70%;
+  top: 15%;
+}
+
+.stripe5 {
+  background: #669db6;
+  height: 40%;
+  top: 30%
+}
