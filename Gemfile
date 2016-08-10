@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
