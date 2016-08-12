@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="row">
-      <div class="col-xs-3">
+      <div class="col-xs-2">
         <%= link_to root_path do %>
           <div class="logoReforest">
 
@@ -23,15 +23,44 @@
         <% end %>
       </div>
 
-      <div class="col-xs-4 slogan">
+      <div class="col-xs-6 slogan">
         Splurting out unsolicited truths regarding your age since 2016
       </div>
-      <div class="col-xs-5 links">
-        <%= link_to 'Contribute', new_quote_path %>
+      <div class="col-xs-4 links">
+
+        <!-- Button trigger modal -->
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         <%= link_to 'About', about_path %>
       </div>
     </div>
   </header>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for Quote.new do |f| %>
+            <div class="modal-body">
+              <%= f.input :saying %>
+              <%= f.input :author %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <%= f.submit 'Add Quote', class: 'btn btn-danger' %>
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <hr>
 
 <div class="container">
@@ -46,7 +75,7 @@
 <footer class="footer">
   <div class="container">
     <div class="col-xs-6">
-      <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+      <%= link_to "I don't feel old enough, one more!", root_path, class: 'next-quote' %>
     </div>
     <div class="col-xs-6 footer-blurb">
       Proudly hacked by Lulu <br>
